@@ -4,9 +4,10 @@ import MobileMenu from "../mobile-menu";
 import "./style.css";
 
 export default function Navbar() {
-  const [offset, setOffset] = useState<number>(0);
+  const [scrollY, setScrollY] = useState<number>(0);
   const [openMenu, setOpenMenu] = useState<boolean>(false);
 
+  // Disabling scroll when menu is opened
   if (openMenu) {
     document.documentElement.style.overflow = "hidden";
   } else {
@@ -14,20 +15,27 @@ export default function Navbar() {
   }
 
   useEffect(() => {
-    window.addEventListener("scroll", () => setOffset(window.scrollY));
+    // Setting Sticky Navbar
+    window.addEventListener("scroll", () => setScrollY(window.scrollY));
+
     return () =>
-      window.removeEventListener("scroll", () => setOffset(window.scrollY));
+      window.removeEventListener("scroll", () => setScrollY(window.scrollY));
   }, []);
 
   return (
-    <header className={offset > 0 ? "sticky" : ""}>
+    <header className={scrollY > 0 ? "sticky" : ""}>
       <nav className="centeredY container">
+        {/* IQRO logo */}
         <a href="/" className="logo">
           <img src="./logo.svg" alt="logo" />
         </a>
+
+        {/* Mobile Menu BTN */}
         <div className="menu-btn" onClick={() => setOpenMenu((prev) => !prev)}>
           <img src="./menu.svg" alt="menu image" />
         </div>
+
+        {/* Nav Links */}
         <ul className="row">
           {links.map(({ link, href }) => (
             <li key={link}>
@@ -35,6 +43,8 @@ export default function Navbar() {
             </li>
           ))}
         </ul>
+
+        {/* Mobile Menu */}
         {openMenu && (
           <MobileMenu openMenu={openMenu} setOpenMenu={setOpenMenu} />
         )}

@@ -11,13 +11,13 @@ export default function App() {
   return (
     <>
       <main className="container">
-        <Home />
-        <Services />
-        <WorkFlow />
-        <Result />
-        <Pricing />
+        <Home /> {/* NavBar & Hero */}
+        <Services /> {/* Услуги */}
+        <WorkFlow /> {/* Как мы работаем */}
+        <Result /> {/* Что даст вашему бизнесу */}
+        <Pricing /> {/* Сколько стоят услуги */}
       </main>
-      <Footer />
+      <Footer /> {/* End of the web */}
     </>
   );
 }

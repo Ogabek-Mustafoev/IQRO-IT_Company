@@ -5,14 +5,17 @@ footer {
   position: relative;
   overflow: hidden;
 }
+
 footer .layer {
   z-index: inherit;
   background: rgb(19, 126, 126);
   filter: blur(150px);
 }
+
 footer ul {
   gap: 6rem;
 }
+
 footer ul li {
   z-index: 10;
 }

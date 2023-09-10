@@ -3,10 +3,12 @@ import { InfoModal, SendModal, ThanksModal } from "../pricing-modal";
 import "./style.css";
 
 export default function Pricing() {
+  // Steps to show modals
   const [modal, setModal] = useState<"info" | "send" | "thanks">("info");
 
   return (
     <section id="pricing" className="gradient-bg pricing row">
+      {/* Left Content */}
       <div className="left col">
         <h1>Сколько стоят услуги</h1>
         <p>
@@ -18,6 +20,8 @@ export default function Pricing() {
           устанавливают стоимость продукта.
         </p>
       </div>
+
+      {/* Right Content */}
       <div className="right col">
         {modal === "info" ? (
           <InfoModal setModal={setModal} />

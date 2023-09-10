@@ -4,6 +4,7 @@ type Props = {
   setModal: (value: "info" | "send" | "thanks") => void;
 };
 
+// First Modal
 export function InfoModal({ setModal }: Props) {
   return (
     <>
@@ -17,6 +18,7 @@ export function InfoModal({ setModal }: Props) {
   );
 }
 
+// Second (send) Modal
 export function SendModal({ setModal }: Props) {
   return (
     <>
@@ -38,6 +40,7 @@ export function SendModal({ setModal }: Props) {
   );
 }
 
+// Third (Thanks) Modal
 export function ThanksModal({ setModal }: Props) {
   return (
     <>

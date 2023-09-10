@@ -8,6 +8,7 @@ import "slick-carousel/slick/slick-theme.css";
 import "./style.css";
 
 export default function Services() {
+  // Slider Settings
   const settings = {
     dots: false,
     infinite: false,
@@ -19,11 +20,15 @@ export default function Services() {
   return (
     <section id="services" className="col">
       <Heading title="Услуги" />
+
+      {/* Service list for big devices(tablet and above) */}
       <div className="service-list">
         {services.map((item, idx) => (
           <ServiceCard key={idx} {...item} />
         ))}
       </div>
+
+      {/* Service list with slider for phone */}
       <Slider {...settings}>
         {services.map((item, idx) => (
           <ServiceCard key={idx} {...item} />

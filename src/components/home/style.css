@@ -3,9 +3,12 @@
   max-height: 750px;
   position: relative;
 }
-@media screen and (orientation: landscape) {
+
+/* Detecting phone landscape orientation */
+@media screen and (max-width: 915px) and (orientation: landscape) {
   .home {
-    height: 600px;
+    min-height: 600px;
+    height: 100vh;
   }
 }
 

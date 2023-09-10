@@ -6,7 +6,9 @@ import "./style.css";
 export default function WorkFlow() {
   return (
     <section id="workflow">
-      <Heading title="Как мы работаем " />
+      <Heading title="Как мы работаем" />
+
+      {/* Work Cards */}
       <div className="work-list row gradient-bg">
         {works.map((item, idx) => (
           <WorkCard {...item} key={idx} />
