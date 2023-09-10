@@ -1,0 +1,87 @@
+#workflow {
+  position: relative;
+}
+#workflow .work-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+  padding: 3rem;
+  border-radius: 1.8rem;
+  border: 1px solid #cccccc56;
+  margin: 5rem 0;
+}
+#workflow .work-list .work-item {
+  margin: 2rem 0;
+  gap: 2rem;
+}
+#workflow .work-list .work-item .icon {
+  border: 1px solid #fff;
+  width: 83px;
+  height: 83px;
+  border-radius: 50%;
+}
+#workflow .work-list .work-item h2 {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 40px;
+}
+
+@media screen and (max-width: 992px) {
+  #workflow .work-list {
+    padding: 1rem 2.5rem;
+    margin: 0 -1rem;
+  }
+  #workflow .work-list .work-item .icon {
+    width: 62.807px;
+    height: 62.807px;
+  }
+  #workflow .work-list .work-item .icon img {
+    width: 35.566px;
+    height: 35.566px;
+  }
+  #workflow .work-list .work-item h2 {
+    font-size: 22.701px;
+    line-height: 30.269px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #workflow {
+    margin-bottom: 4rem;
+  }
+  #workflow .work-list {
+    padding: 0.5rem 2rem;
+    margin: 0 -1rem;
+  }
+  #workflow .work-list .work-item .icon {
+    width: 46.599px;
+    height: 46.599px;
+  }
+  #workflow .work-list .work-item .icon img {
+    width: 26.387px;
+    height: 26.387px;
+  }
+  #workflow .work-list .work-item h2 {
+    font-size: 16.843px;
+    line-height: 22.457px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #workflow .work-list {
+    padding: 1rem;
+    margin: 0;
+    grid-template-columns: 1fr;
+  }
+  #workflow .work-list .work-item .icon {
+    width: 50px;
+    height: 50px;
+  }
+  #workflow .work-list .work-item .icon img {
+    width: 30px;
+    height: 30px;
+  }
+  #workflow .work-list .work-item {
+    margin: 1.5rem 0;
+    gap: 1rem;
+  }
+}

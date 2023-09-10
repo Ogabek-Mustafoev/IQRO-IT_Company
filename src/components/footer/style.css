@@ -1,0 +1,53 @@
+footer {
+  margin-top: 3rem;
+  height: 209px;
+  background: #000;
+  position: relative;
+  overflow: hidden;
+}
+footer .layer {
+  z-index: inherit;
+  background: rgb(19, 126, 126);
+  filter: blur(150px);
+}
+footer ul {
+  gap: 6rem;
+}
+footer ul li {
+  z-index: 10;
+}
+
+@media screen and (max-width: 992px) {
+  footer {
+    margin-top: 5rem;
+    height: 146px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    margin-top: 3rem;
+    height: 100px;
+  }
+  footer ul {
+    gap: 4rem;
+  }
+  footer ul li a {
+    font-size: 11.177px;
+    font-weight: 600;
+    line-height: 16.766px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  footer {
+    margin-top: 3.3rem;
+    height: unset;
+    padding: 2rem 0;
+  }
+  footer ul {
+    gap: 0.5rem;
+    flex-direction: column;
+    align-items: center;
+  }
+}

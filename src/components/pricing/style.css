@@ -1,0 +1,154 @@
+section.pricing {
+  border-radius: 1.5rem;
+  border: 1px solid #cccccc56;
+  justify-content: end;
+  gap: 1rem;
+  overflow: hidden;
+}
+section.pricing .left {
+  width: 60%;
+  row-gap: 2rem;
+  justify-content: center;
+}
+section.pricing .left h1 {
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 55px;
+}
+section.pricing .left p {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 35px;
+}
+section.pricing .right {
+  min-height: 343px;
+  width: 30%;
+  padding: 1rem;
+  padding-left: 1.5rem;
+  background: #000;
+  border-radius: 1.5rem;
+  justify-content: space-between;
+}
+section.pricing .right input {
+  padding: 1.2rem;
+  margin-bottom: 0.5rem;
+  border-radius: 2rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+section.pricing .right h1 {
+  margin-top: 2rem;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 50px;
+}
+section.pricing .right p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  margin: 1rem 0;
+}
+section.pricing .right button {
+  margin-top: 2rem;
+}
+section.pricing .right .success {
+  margin-top: 1rem;
+  text-align: center;
+}
+section.pricing .right .success img {
+  height: 68px;
+  width: 68px;
+}
+
+@media screen and (max-width: 992px) {
+  section.pricing {
+    margin: 0 -1rem;
+  }
+  section.pricing .left {
+    width: 62%;
+  }
+  section.pricing .left h1 {
+    margin-top: 0;
+    font-size: 37.774px;
+    line-height: 41.552px;
+  }
+  section.pricing .right {
+    width: 30%;
+    padding: 1rem;
+  }
+  section.pricing .right h1 {
+    margin-top: 0.9rem;
+    line-height: 37.774px;
+    font-size: 30.219px;
+  }
+  section.pricing .left p {
+    font-size: 22.664px;
+    line-height: 26.442px;
+  }
+  section.pricing .right p {
+    font-size: 15.11px;
+    line-height: 20.398px;
+  }
+  section.pricing .right button {
+    margin-top: 1rem;
+    font-size: 12px;
+    padding: 20px !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section.pricing .left h1 {
+    font-size: 27.907px;
+    line-height: 30.698px;
+  }
+  section.pricing .left p {
+    font-size: 16.744px;
+    line-height: 19.535px;
+  }
+  section.pricing .right h1 {
+    font-size: 22.326px;
+    line-height: 27.907px;
+  }
+  section.pricing .right p {
+    font-size: 11.163px;
+    line-height: 15.07px;
+  }
+  section.pricing .right button {
+    font-size: 9px;
+    padding: 15px !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  section.pricing {
+    margin: 0;
+    flex-direction: column;
+  }
+  section.pricing .left {
+    padding: 3rem 1rem 2rem 1rem;
+  }
+  section.pricing .right {
+    padding: 1.8rem 1rem 1.2rem 1rem;
+  }
+  section.pricing .left,
+  section.pricing .right {
+    width: 100%;
+  }
+  section.pricing .right h1 {
+    font-size: 30px;
+    line-height: 35px;
+  }
+  section.pricing .left p {
+    font-size: 15px;
+    font-weight: 500;
+  }
+  section.pricing .right p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+  }
+  section.pricing .right button {
+    font-size: 13px;
+  }
+}

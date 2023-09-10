@@ -1,0 +1,128 @@
+header {
+  position: fixed;
+  width: 100%;
+  padding: 3.5rem 0;
+  background: transparent;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  transition: all 0.3s ease;
+}
+nav {
+  width: 100%;
+  gap: 10%;
+}
+nav .logo {
+  height: 35px;
+  cursor: pointer;
+}
+nav .logo img {
+  height: 100%;
+}
+nav .menu-btn:active {
+  transform: scale(0.95);
+}
+nav .menu-btn {
+  display: none;
+  position: absolute;
+  right: 1.5rem;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}
+nav .menu-btn img {
+  height: 100%;
+  object-fit: cover;
+}
+nav ul {
+  width: 100%;
+}
+nav ul li:not(:last-child) {
+  margin-right: 10%;
+}
+nav ul li.call {
+  display: none;
+}
+.mobile-menu {
+  display: none !important;
+  position: fixed;
+  height: 100vh;
+  width: 70%;
+  top: 0;
+  right: 0;
+  background: #fff;
+  align-items: end;
+  padding: 4rem 2rem 3rem 1rem;
+  gap: 2rem;
+  overflow-y: auto;
+}
+.mobile-menu .mobile-menu_btn {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+.mobile-menu .mobile-menu_btn img {
+  height: 100%;
+  width: 100%;
+  filter: brightness(0);
+}
+.mobile-menu a {
+  color: #000;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 24px;
+}
+.mobile-menu .call {
+  width: 104px;
+  height: 55px;
+  border: 2px solid #000;
+  text-align: center;
+  border-radius: 1rem;
+  position: relative;
+}
+.mobile-menu .call img {
+  height: 100%;
+}
+.mobile-menu .call span {
+  position: absolute;
+  color: #000;
+  font-size: 16px;
+  font-weight: 800;
+  bottom: -1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media screen and (max-width: 992px) {
+  header {
+    padding: 3rem 0;
+  }
+  nav .logo {
+    height: 24px;
+  }
+}
+@media screen and (max-width: 768px) {
+  nav {
+    gap: 7%;
+  }
+  nav ul li:not(:last-child) {
+    margin-right: 5%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  nav {
+    justify-content: center;
+  }
+  nav .menu-btn {
+    display: block;
+  }
+  nav ul {
+    display: none !important;
+  }
+  .mobile-menu {
+    display: flex !important;
+  }
+}
